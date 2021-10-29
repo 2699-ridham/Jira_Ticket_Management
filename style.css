@@ -1,0 +1,160 @@
+/* universal slector */
+*{
+    box-sizing: border-box;
+}
+body{
+    /* border: 2px solid red; */
+    margin: 0px;  /* by default browser sheet provides the margin of 8px */
+    font-family: sans-serif;
+}
+.header-container{
+    height: 5.2rem;
+    background-color: #333;
+    color: aliceblue;
+    display:flex;
+    align-items: flex-start;
+    padding-left: 3rem;
+    padding-top: 1rem;
+}
+
+/* Syntax for comman styling */
+.header-container>*{
+    background-color: rgb(96, 88, 88);
+    border-radius: 6px;
+    height: 65%;
+}
+.color-group_container{
+    width: 40%;
+    margin-right: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.color{
+    height: 60%;
+    width: 10%;
+    border-radius: 4px;
+    border-radius: 6px;
+}
+.pink{
+    background-color: lightpink;
+}
+.blue{
+    background-color: lightblue;
+}
+.green{
+    background-color: lightgreen;
+}
+.black{
+    background-color: black;
+}
+.add-cross_container,.lock-unlock_container{
+    width: 20%;
+    display: flex;
+    margin-right: 1rem;
+}
+.add-cross_container>*,.lock-unlock_container>*{
+    width: 50%;
+    height: 100%;
+}
+.plus-container,.multiply-container,.lock-container,.unlock-container{
+    /* perfectly center an element inside a div */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.active{
+    background-color: rgb(62, 56, 56);
+}
+/* icons are treated as text */
+.fa-plus,.fa-times,.fa-lock,.fa-unlock{
+    font-size: 2rem;
+    /* font-weight- -> boldness of text or icon*/
+    font-weight: lighter;
+}
+.main-container{
+    /* border: 1px solid rgb(71, 112, 10); */
+    /* 100% width of the screen -> 100vw */
+    /* 100% height of the screen -> 100 vh */
+    height: calc(100vh - 3.5rem); /*browser ki scrn size 100vh hota hai */
+    background-color: #f2f2f2;
+    padding: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    gap: 1.2rem;
+    overflow-y: scroll;
+}
+.task_container{
+    /* border: 1px solid black; */
+    background-color: white;
+    height: 10rem;
+    width: 15rem;
+}
+.task-header{
+    height: 0.6rem;
+}
+.task_main-container{
+    padding: 0.5rem;
+    height: 8rem;
+}
+.task_id{
+    color: rgb(150,144,144);
+    margin: 0.5rem;
+    margin-left: 0px;
+}
+.text{
+    height: 80%;
+    overflow-y: scroll;
+}
+.text::-webkit-scrollbar {
+    display: none;
+  }
+.modal{
+    height: 20rem;
+    width: 32rem;
+    background-color: white;
+    /* make it fixed */
+    position: fixed;
+    /* center */
+    top: calc(50% - 10rem);
+    left: calc(50% - (32 / 2)rem);
+    display: flex;
+    box-shadow: 1px 8px 16px 14px rgb(44, 40, 40);
+}
+.input_container{
+    width: 65%;
+    height: 100%;
+    padding: 2rem;
+}
+.input-task{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+}
+.color_container{
+    background-color: #454545;
+    height: 100%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1.5rem;
+}
+.color_picker{
+    height: 3rem;
+    width: 6rem;
+}
+.selected{
+    border: 0.2rem solid white;
+}
+@media only screen and (max-width: 600px) {
+    html { font-size: 10px; } 
+}

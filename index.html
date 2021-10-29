@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome for icons -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet " href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- height -> if user mention then it will remain same as mention otherwise take the height of the content -->
+    <div class="header-container">
+        <div class="color-group_container">
+            <div class="color pink"></div>
+            <div class="color blue"></div>
+            <div class="color green"></div>
+            <div class="color black"></div>
+        </div>
+        <div class="add-cross_container">
+            <div class="plus-container">
+                <i class="fas fa-plus"></i>
+            </div>
+            <div class="multiply-container">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+        <div class="lock-unlock_container">
+            <div class="lock-container">
+                <i class="fas fa-lock"></i>
+            </div>
+            <div class="unlock-container active">
+                <i class="fas fa-unlock"></i>
+            </div>
+        </div>
+        <!-- <input type="text" class="task_input"> -->
+    </div>
+    <div class="main-container">
+        <div class="modal">
+            <div class="input_container">
+                <!-- textarea is used to enter the text -->
+                <textarea class="input-task" placeholder="Enter the text"></textarea>
+            </div>
+            <div class="color_container">
+                <div class="color_picker pink"></div>
+                <div class="color_picker blue"></div>
+                <div class="color_picker green"></div>
+                <div class="color_picker black selected"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/short-unique-id@latest/dist/short-unique-id.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
